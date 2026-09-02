@@ -1,0 +1,10 @@
+sale_id,customer_name,product,category,quantity,price,city,sale_date,discount
+1,Arun,Laptop,Electronics,1,55000.00,Bangalore,2026-08-01,10.00
+3,Rahul,Chair,Furniture,1,4500.00,Mumbai,2026-08-05,NULL
+4,Ananya,Keyboard,Electronics,1,2500.00,Bangalore,2026-08-07,8.00
+5,Kiran,T-Shirt,Clothing,3,1200.00,Hyderabad,2026-08-10,15.00
+6,Asha,Desk,Furniture,1,7000.00,Chennai,2026-08-12,NULL
+7,Amit,Mobile,Electronics,1,25000.00,Mumbai,2026-08-15,10.00
+8,Sneha,Jeans,Clothing,2,3000.00,Bangalore,2026-08-18,5.00
+9,Vikram,Monitor,Electronics,1,15000.00,Delhi,2026-08-20,NULL
+10,Divya,Table,Furniture,1,6000.00,Hyderabad,2026-08-22,12.00
