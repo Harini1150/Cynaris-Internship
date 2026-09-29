@@ -1,0 +1,5 @@
+.env
+.venv-pandasai/
+.venv-pandasai311/
+*.log
+Week 5/merged_orders_cleaned.csv
