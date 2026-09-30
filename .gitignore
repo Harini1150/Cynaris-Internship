@@ -3,3 +3,4 @@
 .venv-pandasai311/
 *.log
 Week 5/merged_orders_cleaned.csv
+Week 5/duckdb_100k.csv
