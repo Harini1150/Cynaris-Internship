@@ -272,3 +272,7 @@ if __name__ == "__main__":
 
 # Week 6 Day 1:
 # Vanna AI NL-to-SQL setup and natural-language query testing completed.
+# Week 6 Day 2:
+# Domain-specific SQL patterns are provided through schema_context.
+# Five example Question-SQL pairs guide Vanna's natural-language
+# to SQL generation for the cynaris_sales database.
