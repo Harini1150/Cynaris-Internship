@@ -269,3 +269,6 @@ Generate the correct SQL query and execute it using the SQL tool.
 
 if __name__ == "__main__":
     asyncio.run(test_agent())
+
+# Week 6 Day 1:
+# Vanna AI NL-to-SQL setup and natural-language query testing completed.
