@@ -276,3 +276,4 @@ if __name__ == "__main__":
 # Domain-specific SQL patterns are provided through schema_context.
 # Five example Question-SQL pairs guide Vanna's natural-language
 # to SQL generation for the cynaris_sales database.
+# Week 6 Day 2 validation: custom SQL patterns tested successfully.
