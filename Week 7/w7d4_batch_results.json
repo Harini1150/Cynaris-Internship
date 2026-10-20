@@ -1,0 +1,3020 @@
+[
+  {
+    "number": 1,
+    "question": "What is the total sales value?",
+    "status": 200,
+    "response": {
+      "question": "What is the total sales value?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:22:22.951265",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:22.951265",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:22.956286",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:22.956286",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "3e6e4a6e-63e8-489a-bac1-d36c91f67714",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:22:22.956286",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:22.977844",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:22.977844",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "3e6e4a6e-63e8-489a-bac1-d36c91f67714",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:30.454332",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:30.454332",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "196a2e88-1998-4e83-956a-9ad459533efa",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:22:30.453786",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:30.456043",
+          "rich_component": {
+            "id": "0fc010ea-51cd-4d13-93bb-8ba2fe2c7495",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:30.456043",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT SUM(quantity * price) AS total_sales FROM sales;"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:22:30.644182",
+          "rich_component": {
+            "id": "0fc010ea-51cd-4d13-93bb-8ba2fe2c7495",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:30.644182",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT SUM(quantity * price) AS total_sales FROM sales;"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:22:30.644182",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:30.644182",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "196a2e88-1998-4e83-956a-9ad459533efa",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:30.644182",
+          "rich_component": {
+            "id": "a26b691d-537f-421d-87cc-d9797cb1024e",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:30.644182",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "total_sales": "126200.00"
+              }
+            ],
+            "columns": [
+              "total_sales"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 1 rows with 1 columns",
+            "row_count": 1,
+            "column_count": 1,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "total_sales\r\n126200.00\r\n\n\nResults saved to file: query_results_0f1635c5.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_0f1635c5.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:22:46.259556",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:46.259007",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:46.261271",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:46.261271",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:46.261271",
+          "rich_component": {
+            "id": "af95e578-7900-4aed-8578-03862974f927",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:46.261271",
+            "visible": true,
+            "interactive": false,
+            "content": "The total sales value calculated from the provided data is $126,200.00. This value is based on the sum of the sales values calculated as the product of quantity and price for all sales records.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The total sales value calculated from the provided data is $126,200.00. This value is based on the sum of the sales values calculated as the product of quantity and price for all sales records."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 2,
+    "question": "How many customers are there in each city?",
+    "status": 200,
+    "response": {
+      "question": "How many customers are there in each city?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:22:46.353894",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:46.353894",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:46.355897",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:46.355897",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "126ab1b0-95b6-4639-a474-070c2d3bd73c",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:22:46.354897",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:46.361450",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:46.361450",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "126ab1b0-95b6-4639-a474-070c2d3bd73c",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:53.723422",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:53.723422",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "f98b1f4a-f986-4e63-a04b-35ede1f396e9",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:22:53.722867",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:53.725429",
+          "rich_component": {
+            "id": "4dad6bfb-d22a-496e-ab06-f2820fd5f81b",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:53.725429",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:22:53.990362",
+          "rich_component": {
+            "id": "4dad6bfb-d22a-496e-ab06-f2820fd5f81b",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:53.990362",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:22:53.990362",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:53.990362",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "f98b1f4a-f986-4e63-a04b-35ede1f396e9",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:22:53.989321",
+          "rich_component": {
+            "id": "1982c66b-2436-42d2-aff5-c1564611477f",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:22:53.989321",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "city": "Bangalore",
+                "customer_count": 3
+              },
+              {
+                "city": "Chennai",
+                "customer_count": 2
+              },
+              {
+                "city": "Mumbai",
+                "customer_count": 2
+              },
+              {
+                "city": "Hyderabad",
+                "customer_count": 2
+              },
+              {
+                "city": "Delhi",
+                "customer_count": 1
+              },
+              {
+                "city": "Pune",
+                "customer_count": 1
+              }
+            ],
+            "columns": [
+              "city",
+              "customer_count"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 6 rows with 2 columns",
+            "row_count": 6,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "city,customer_count\r\nBangalore,3\r\nChennai,2\r\nMumbai,2\r\nHyderabad,2\r\nDelhi,1\r\nPune,1\r\n\n\nResults saved to file: query_results_bdec76ae.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_bdec76ae.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:23:16.020816",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:16.020816",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:16.024840",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:16.023825",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:16.027834",
+          "rich_component": {
+            "id": "bc0a2b6c-b9ae-4667-bd10-f16b8e1374bf",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:16.026836",
+            "visible": true,
+            "interactive": false,
+            "content": "The number of customers in each city is as follows:\n\n- Bangalore: 3 customers\n- Chennai: 2 customers\n- Mumbai: 2 customers\n- Hyderabad: 2 customers\n- Delhi: 1 customer\n- Pune: 1 customer\n\nResults have been saved to `query_results_bdec76ae.csv`. You can use this file for visualization if needed.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The number of customers in each city is as follows:\n\n- Bangalore: 3 customers\n- Chennai: 2 customers\n- Mumbai: 2 customers\n- Hyderabad: 2 customers\n- Delhi: 1 customer\n- Pune: 1 customer\n\nResults have been saved to `query_results_bdec76ae.csv`. You can use this file for visualization if needed."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 3,
+    "question": "What are the total sales for each category?",
+    "status": 200,
+    "response": {
+      "question": "What are the total sales for each category?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:23:16.127282",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:16.127282",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:16.129294",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:16.129294",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "d6a22827-884c-402f-b4b8-7d243bd716e2",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:23:16.129294",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:16.146363",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:16.146363",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "d6a22827-884c-402f-b4b8-7d243bd716e2",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:24.737135",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:24.737135",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "9f6ec8a2-3fe0-4c33-87c9-26c940f6613a",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:23:24.736017",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:24.740794",
+          "rich_component": {
+            "id": "f01890df-409a-48a1-ac33-3f928540416e",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:24.740420",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT category, SUM(quantity * price) AS total_sales FROM sales GROUP BY category"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:23:24.966857",
+          "rich_component": {
+            "id": "f01890df-409a-48a1-ac33-3f928540416e",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:24.966857",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT category, SUM(quantity * price) AS total_sales FROM sales GROUP BY category"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:23:24.966857",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:24.966857",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "9f6ec8a2-3fe0-4c33-87c9-26c940f6613a",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:24.965403",
+          "rich_component": {
+            "id": "d3900faf-1eb2-4b10-af75-8fe9abb7ad22",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:24.965403",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "category": "Electronics",
+                "total_sales": "99100.00"
+              },
+              {
+                "category": "Furniture",
+                "total_sales": "17500.00"
+              },
+              {
+                "category": "Clothing",
+                "total_sales": "9600.00"
+              }
+            ],
+            "columns": [
+              "category",
+              "total_sales"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 3 rows with 2 columns",
+            "row_count": 3,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "category,total_sales\r\nElectronics,99100.00\r\nFurniture,17500.00\r\nClothing,9600.00\r\n\n\nResults saved to file: query_results_45b98628.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_45b98628.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:23:50.429455",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:50.429455",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:50.431469",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:50.431469",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:23:50.433083",
+          "rich_component": {
+            "id": "5646ea54-b5df-4ffe-9cc1-3dd7f7f6c334",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:23:50.433083",
+            "visible": true,
+            "interactive": false,
+            "content": "The total sales for each category have been calculated and are as follows:\n\n- Electronics: $99,100.00\n- Furniture: $17,500.00\n- Clothing: $9,600.00\n\nThese results have been saved to a file named `query_results_45b98628.csv`. You can use this file for further analysis or visualization if needed.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The total sales for each category have been calculated and are as follows:\n\n- Electronics: $99,100.00\n- Furniture: $17,500.00\n- Clothing: $9,600.00\n\nThese results have been saved to a file named `query_results_45b98628.csv`. You can use this file for further analysis or visualization if needed."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 4,
+    "question": "What are the top products by sales?",
+    "status": 200,
+    "response": {
+      "question": "What are the top products by sales?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:24:25.590023",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:25.590023",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:24:25.595244",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:25.595244",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "20d615f7-d73f-4908-8a75-1b82c3800463",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:24:25.594790",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:24:25.605687",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:25.605687",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "20d615f7-d73f-4908-8a75-1b82c3800463",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:24:32.555285",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:32.555285",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "c92002bc-c75b-4325-81b5-90d8020e1c51",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:24:32.555285",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:24:32.555851",
+          "rich_component": {
+            "id": "5a5144c0-1a3b-444e-b98d-6b101bc48b9a",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:32.555285",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT product, SUM(quantity * price) AS total_sales FROM sales GROUP BY product ORDER BY total_sales DESC"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:24:32.865557",
+          "rich_component": {
+            "id": "5a5144c0-1a3b-444e-b98d-6b101bc48b9a",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:32.865557",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT product, SUM(quantity * price) AS total_sales FROM sales GROUP BY product ORDER BY total_sales DESC"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:24:32.865557",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:32.865557",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "c92002bc-c75b-4325-81b5-90d8020e1c51",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:24:32.864614",
+          "rich_component": {
+            "id": "2045acf8-a1db-4097-b9cf-2943e20142ea",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:24:32.864614",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "product": "Laptop",
+                "total_sales": "55000.00"
+              },
+              {
+                "product": "Mobile",
+                "total_sales": "25000.00"
+              },
+              {
+                "product": "Monitor",
+                "total_sales": "15000.00"
+              },
+              {
+                "product": "Desk",
+                "total_sales": "7000.00"
+              },
+              {
+                "product": "Jeans",
+                "total_sales": "6000.00"
+              },
+              {
+                "product": "Table",
+                "total_sales": "6000.00"
+              },
+              {
+                "product": "Chair",
+                "total_sales": "4500.00"
+              },
+              {
+                "product": "T-Shirt",
+                "total_sales": "3600.00"
+              },
+              {
+                "product": "Keyboard",
+                "total_sales": "2500.00"
+              },
+              {
+                "product": "Mouse",
+                "total_sales": "1600.00"
+              }
+            ],
+            "columns": [
+              "product",
+              "total_sales"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 10 rows with 2 columns",
+            "row_count": 10,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "product,total_sales\r\nLaptop,55000.00\r\nMobile,25000.00\r\nMonitor,15000.00\r\nDesk,7000.00\r\nJeans,6000.00\r\nTable,6000.00\r\nChair,4500.00\r\nT-Shirt,3600.00\r\nKeyboard,2500.00\r\nMouse,1600.00\r\n\n\nResults saved to file: query_results_c7a4036d.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_c7a4036d.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:25:25.294031",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:25.294031",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:25.310684",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:25.310684",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:25.315935",
+          "rich_component": {
+            "id": "5db922ac-2de3-477d-a0c7-8c800c715d2d",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:25.315935",
+            "visible": true,
+            "interactive": false,
+            "content": "The top products by sales are as follows:\n\n1. Laptop - Total Sales: $55,000.00\n2. Mobile - Total Sales: $25,000.00\n3. Monitor - Total Sales: $15,000.00\n4. Desk - Total Sales: $7,000.00\n5. Jeans - Total Sales: $6,000.00\n6. Table - Total Sales: $6,000.00\n7. Chair - Total Sales: $4,500.00\n8. T-Shirt - Total Sales: $3,600.00\n9. Keyboard - Total Sales: $2,500.00\n10. Mouse - Total Sales: $1,600.00\n\nThis list is ordered from the highest total sales value to the lowest. If you need any further analysis or have additional questions, feel free to ask.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The top products by sales are as follows:\n\n1. Laptop - Total Sales: $55,000.00\n2. Mobile - Total Sales: $25,000.00\n3. Monitor - Total Sales: $15,000.00\n4. Desk - Total Sales: $7,000.00\n5. Jeans - Total Sales: $6,000.00\n6. Table - Total Sales: $6,000.00\n7. Chair - Total Sales: $4,500.00\n8. T-Shirt - Total Sales: $3,600.00\n9. Keyboard - Total Sales: $2,500.00\n10. Mouse - Total Sales: $1,600.00\n\nThis list is ordered from the highest total sales value to the lowest. If you need any further analysis or have additional questions, feel free to ask."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 5,
+    "question": "What are the total sales for each city?",
+    "status": 200,
+    "response": {
+      "question": "What are the total sales for each city?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:25:42.042026",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:42.042026",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:42.042572",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:42.042572",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "a975f4c2-fea7-4fc0-9d49-1f00f70a8ce4",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:25:42.042026",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:42.043682",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:42.043682",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "a975f4c2-fea7-4fc0-9d49-1f00f70a8ce4",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:49.736817",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:49.736817",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "7b4063da-9f3b-4cec-8ee3-250eed171c9e",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:25:49.736286",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:49.736817",
+          "rich_component": {
+            "id": "c70b9ca7-9a9f-4e7f-97c5-2e05eed916b2",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:49.736817",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT city, SUM(quantity * price) AS total_sales FROM sales GROUP BY city ORDER BY total_sales DESC"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:25:49.891833",
+          "rich_component": {
+            "id": "c70b9ca7-9a9f-4e7f-97c5-2e05eed916b2",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:49.891833",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT city, SUM(quantity * price) AS total_sales FROM sales GROUP BY city ORDER BY total_sales DESC"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:25:49.891833",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:49.891833",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "7b4063da-9f3b-4cec-8ee3-250eed171c9e",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:25:49.891833",
+          "rich_component": {
+            "id": "7097d0b6-952f-449d-a3a1-8e8f918fe378",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:25:49.889828",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "city": "Bangalore",
+                "total_sales": "63500.00"
+              },
+              {
+                "city": "Mumbai",
+                "total_sales": "29500.00"
+              },
+              {
+                "city": "Delhi",
+                "total_sales": "15000.00"
+              },
+              {
+                "city": "Hyderabad",
+                "total_sales": "9600.00"
+              },
+              {
+                "city": "Chennai",
+                "total_sales": "8600.00"
+              }
+            ],
+            "columns": [
+              "city",
+              "total_sales"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 5 rows with 2 columns",
+            "row_count": 5,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "city,total_sales\r\nBangalore,63500.00\r\nMumbai,29500.00\r\nDelhi,15000.00\r\nHyderabad,9600.00\r\nChennai,8600.00\r\n\n\nResults saved to file: query_results_755924c5.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_755924c5.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:26:20.000974",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:20.000974",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:20.003825",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:20.003825",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:20.008719",
+          "rich_component": {
+            "id": "c7995538-1115-4874-b28a-1c20fbf7fa74",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:20.008719",
+            "visible": true,
+            "interactive": false,
+            "content": "The total sales for each city have been calculated and are as follows:\n\n- Bangalore: ₹63,500.00\n- Mumbai: ₹29,500.00\n- Delhi: ₹15,000.00\n- Hyderabad: ₹9,600.00\n- Chennai: ₹8,600.00\n\nThese results have been saved to a file named `query_results_755924c5.csv`. You can use this file to visualize the data if needed.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The total sales for each city have been calculated and are as follows:\n\n- Bangalore: ₹63,500.00\n- Mumbai: ₹29,500.00\n- Delhi: ₹15,000.00\n- Hyderabad: ₹9,600.00\n- Chennai: ₹8,600.00\n\nThese results have been saved to a file named `query_results_755924c5.csv`. You can use this file to visualize the data if needed."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 6,
+    "question": "What is the total quantity sold for each product?",
+    "status": 200,
+    "response": {
+      "question": "What is the total quantity sold for each product?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:26:20.110616",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:20.110616",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:20.113094",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:20.113094",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "7b61205e-c03e-4d6c-9575-e7d0ec7c3ad0",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:26:20.112612",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:20.126003",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:20.126003",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "7b61205e-c03e-4d6c-9575-e7d0ec7c3ad0",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:30.322617",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:30.322080",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "77950201-b2ca-4142-8e8b-5587f203540f",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:26:30.322080",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:30.323781",
+          "rich_component": {
+            "id": "744d390a-64cd-4dce-b984-a81c46ff3494",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:30.323781",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT product, SUM(quantity) AS total_quantity_sold FROM sales GROUP BY product ORDER BY total_quantity_sold DESC"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:26:30.544981",
+          "rich_component": {
+            "id": "744d390a-64cd-4dce-b984-a81c46ff3494",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:30.544981",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT product, SUM(quantity) AS total_quantity_sold FROM sales GROUP BY product ORDER BY total_quantity_sold DESC"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:26:30.544981",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:30.544981",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "77950201-b2ca-4142-8e8b-5587f203540f",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:30.544981",
+          "rich_component": {
+            "id": "55737260-9a77-4027-a3ca-29565c245d7d",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:30.544981",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "product": "T-Shirt",
+                "total_quantity_sold": "3"
+              },
+              {
+                "product": "Mouse",
+                "total_quantity_sold": "2"
+              },
+              {
+                "product": "Jeans",
+                "total_quantity_sold": "2"
+              },
+              {
+                "product": "Laptop",
+                "total_quantity_sold": "1"
+              },
+              {
+                "product": "Chair",
+                "total_quantity_sold": "1"
+              },
+              {
+                "product": "Keyboard",
+                "total_quantity_sold": "1"
+              },
+              {
+                "product": "Desk",
+                "total_quantity_sold": "1"
+              },
+              {
+                "product": "Mobile",
+                "total_quantity_sold": "1"
+              },
+              {
+                "product": "Monitor",
+                "total_quantity_sold": "1"
+              },
+              {
+                "product": "Table",
+                "total_quantity_sold": "1"
+              }
+            ],
+            "columns": [
+              "product",
+              "total_quantity_sold"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 10 rows with 2 columns",
+            "row_count": 10,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "product,total_quantity_sold\r\nT-Shirt,3\r\nMouse,2\r\nJeans,2\r\nLaptop,1\r\nChair,1\r\nKeyboard,1\r\nDesk,1\r\nMobile,1\r\nMonitor,1\r\nTable,1\r\n\n\nResults saved to file: query_results_0504f5fd.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_0504f5fd.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:26:54.575751",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:54.575201",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:54.577465",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:54.577465",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:26:54.577465",
+          "rich_component": {
+            "id": "c8336d0c-841c-418f-884b-061bdaa22961",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:26:54.577465",
+            "visible": true,
+            "interactive": false,
+            "content": "The total quantity sold for each product is as follows:\n\n- T-Shirt: 3\n- Mouse: 2\n- Jeans: 2\n- Laptop: 1\n- Chair: 1\n- Keyboard: 1\n- Desk: 1\n- Mobile: 1\n- Monitor: 1\n- Table: 1\n\nThis information has been saved to a file named `query_results_0504f5fd.csv`. You can use this file for visualization purposes if needed.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The total quantity sold for each product is as follows:\n\n- T-Shirt: 3\n- Mouse: 2\n- Jeans: 2\n- Laptop: 1\n- Chair: 1\n- Keyboard: 1\n- Desk: 1\n- Mobile: 1\n- Monitor: 1\n- Table: 1\n\nThis information has been saved to a file named `query_results_0504f5fd.csv`. You can use this file for visualization purposes if needed."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 7,
+    "question": "How many sales records are there?",
+    "status": 200,
+    "response": {
+      "question": "How many sales records are there?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:27:49.591920",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:49.591594",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:27:49.592922",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:49.592922",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "45d2b7e2-ff7a-4ef0-a74c-19af6eed6376",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:27:49.592922",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:27:49.600932",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:49.600932",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "45d2b7e2-ff7a-4ef0-a74c-19af6eed6376",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:27:55.348453",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:55.348453",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "09f2bd46-8dd9-44cf-be64-0dba0436162a",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:27:55.348453",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:27:55.349046",
+          "rich_component": {
+            "id": "d8c5ec4b-b199-44f2-8a09-b7c8b3869659",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:55.349046",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT COUNT(*) AS sales_records FROM sales;"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:27:55.591505",
+          "rich_component": {
+            "id": "d8c5ec4b-b199-44f2-8a09-b7c8b3869659",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:55.591505",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT COUNT(*) AS sales_records FROM sales;"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:27:55.591505",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:55.591505",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "09f2bd46-8dd9-44cf-be64-0dba0436162a",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:27:55.591505",
+          "rich_component": {
+            "id": "0dbe767a-5bc2-4e6f-ab5b-49a516c5cb52",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:27:55.591505",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "sales_records": 10
+              }
+            ],
+            "columns": [
+              "sales_records"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 1 rows with 1 columns",
+            "row_count": 1,
+            "column_count": 1,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "sales_records\r\n10\r\n\n\nResults saved to file: query_results_a7bc9239.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_a7bc9239.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:28:06.811997",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:06.811997",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:06.813242",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:06.813242",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:06.813825",
+          "rich_component": {
+            "id": "9e952023-b273-4af5-8269-697fbb983ddc",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:06.813825",
+            "visible": true,
+            "interactive": false,
+            "content": "There are 10 sales records in the database. Results have been saved to `query_results_a7bc9239.csv`. You can use this file for further analysis or visualization if needed.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "There are 10 sales records in the database. Results have been saved to `query_results_a7bc9239.csv`. You can use this file for further analysis or visualization if needed."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 8,
+    "question": "What is the average product price?",
+    "status": 200,
+    "response": {
+      "question": "What is the average product price?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:28:06.868724",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:06.868724",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:06.869723",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:06.869723",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "c9a166b2-abd9-45d1-b326-66c1e74d0869",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:28:06.869723",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:06.876151",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:06.876151",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "c9a166b2-abd9-45d1-b326-66c1e74d0869",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:13.567014",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:13.567014",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "17999b3c-63a1-4efc-a32e-d0758447a925",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:28:13.567014",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:13.567766",
+          "rich_component": {
+            "id": "883bbaa3-715f-47a9-a175-61b208208a11",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:13.567766",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT product, AVG(price) AS average_price FROM sales GROUP BY product"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:28:13.731342",
+          "rich_component": {
+            "id": "883bbaa3-715f-47a9-a175-61b208208a11",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:13.731342",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT product, AVG(price) AS average_price FROM sales GROUP BY product"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:28:13.731342",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:13.731342",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "17999b3c-63a1-4efc-a32e-d0758447a925",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:13.731342",
+          "rich_component": {
+            "id": "c29ad8cb-cf68-4668-98a2-b49864092f89",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:13.731342",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "product": "Laptop",
+                "average_price": "55000.000000"
+              },
+              {
+                "product": "Mouse",
+                "average_price": "800.000000"
+              },
+              {
+                "product": "Chair",
+                "average_price": "4500.000000"
+              },
+              {
+                "product": "Keyboard",
+                "average_price": "2500.000000"
+              },
+              {
+                "product": "T-Shirt",
+                "average_price": "1200.000000"
+              },
+              {
+                "product": "Desk",
+                "average_price": "7000.000000"
+              },
+              {
+                "product": "Mobile",
+                "average_price": "25000.000000"
+              },
+              {
+                "product": "Jeans",
+                "average_price": "3000.000000"
+              },
+              {
+                "product": "Monitor",
+                "average_price": "15000.000000"
+              },
+              {
+                "product": "Table",
+                "average_price": "6000.000000"
+              }
+            ],
+            "columns": [
+              "product",
+              "average_price"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 10 rows with 2 columns",
+            "row_count": 10,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "product,average_price\r\nLaptop,55000.000000\r\nMouse,800.000000\r\nChair,4500.000000\r\nKeyboard,2500.000000\r\nT-Shirt,1200.000000\r\nDesk,7000.000000\r\nMobile,25000.000000\r\nJeans,3000.000000\r\nMonitor,15000.000000\r\nTable,6000.000000\r\n\n\nResults saved to file: query_results_0f2fe05f.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_0f2fe05f.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:28:55.178747",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:55.174771",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:55.188239",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:55.188239",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:28:55.195740",
+          "rich_component": {
+            "id": "f9451f06-280e-495d-9ca3-d4a74008b80c",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:28:55.195740",
+            "visible": true,
+            "interactive": false,
+            "content": "The average product price for each product category in the sales database is as follows:\n\n- Laptop: $55,000.00\n- Mouse: $800.00\n- Chair: $4,500.00\n- Keyboard: $2,500.00\n- T-Shirt: $1,200.00\n- Desk: $7,000.00\n- Mobile: $25,000.00\n- Jeans: $3,000.00\n- Monitor: $15,000.00\n- Table: $6,000.00\n\nThis information is saved to a file named `query_results_0f2fe05f.csv`. You can use this file for further analysis or visualization if needed.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The average product price for each product category in the sales database is as follows:\n\n- Laptop: $55,000.00\n- Mouse: $800.00\n- Chair: $4,500.00\n- Keyboard: $2,500.00\n- T-Shirt: $1,200.00\n- Desk: $7,000.00\n- Mobile: $25,000.00\n- Jeans: $3,000.00\n- Monitor: $15,000.00\n- Table: $6,000.00\n\nThis information is saved to a file named `query_results_0f2fe05f.csv`. You can use this file for further analysis or visualization if needed."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 9,
+    "question": "What are the total sales for each month?",
+    "status": 200,
+    "response": {
+      "question": "What are the total sales for each month?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:30:08.922650",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:08.922650",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:08.928242",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:08.928242",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "cedbba77-b318-4038-a084-e3a59fdf4e6f",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:30:08.925858",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:08.968870",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:08.968870",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "cedbba77-b318-4038-a084-e3a59fdf4e6f",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:23.302220",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:23.302220",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "ce8ac7c9-2077-4d64-93d2-67e128bd4e24",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:30:23.300210",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:23.313217",
+          "rich_component": {
+            "id": "421d527e-bbbf-4a3a-8e11-4b0a63ee2e1d",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:23.311206",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT DATE_FORMAT(sale_date, '%Y-%m') AS sale_month, SUM(quantity * price) AS total_sales FROM sales GROUP BY sale_month ORDER BY sale_month"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:30:24.197756",
+          "rich_component": {
+            "id": "421d527e-bbbf-4a3a-8e11-4b0a63ee2e1d",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:24.197756",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT DATE_FORMAT(sale_date, '%Y-%m') AS sale_month, SUM(quantity * price) AS total_sales FROM sales GROUP BY sale_month ORDER BY sale_month"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:30:24.197756",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:24.197756",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "ce8ac7c9-2077-4d64-93d2-67e128bd4e24",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:24.197756",
+          "rich_component": {
+            "id": "4daae9d9-81f5-4628-96b2-32ae12f390f0",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:24.197756",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "sale_month": "2026-08",
+                "total_sales": "126200.00"
+              }
+            ],
+            "columns": [
+              "sale_month",
+              "total_sales"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 1 rows with 2 columns",
+            "row_count": 1,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "sale_month,total_sales\r\n2026-08,126200.00\r\n\n\nResults saved to file: query_results_d496a0c7.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_d496a0c7.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:30:49.732687",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:49.732687",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:49.748447",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:49.748447",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:49.754469",
+          "rich_component": {
+            "id": "c94a32b8-46f5-45a4-aca4-a1f7ea7287eb",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:49.752461",
+            "visible": true,
+            "interactive": false,
+            "content": "The total sales for each month from the provided data is as follows:\n\n- August 2026: $126,200.00\n\nThis information is saved to a file named `query_results_d496a0c7.csv`. You can use this file to visualize the data for better understanding.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The total sales for each month from the provided data is as follows:\n\n- August 2026: $126,200.00\n\nThis information is saved to a file named `query_results_d496a0c7.csv`. You can use this file to visualize the data for better understanding."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "number": 10,
+    "question": "Which city has the highest total sales?",
+    "status": 200,
+    "response": {
+      "question": "Which city has the highest total sales?",
+      "responses": [
+        {
+          "timestamp": "2026-10-18T20:30:49.925866",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:49.925866",
+            "visible": true,
+            "interactive": false,
+            "status": "working",
+            "message": "Processing your request...",
+            "detail": "Analyzing query"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:49.929898",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:49.929898",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "d9f303de-13d5-4c2e-9d50-339ce5f5157d",
+              "title": "Load conversation context",
+              "description": "Reading message history and user context",
+              "status": "pending",
+              "progress": null,
+              "created_at": "2026-10-18T20:30:49.927882",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:30:49.955546",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:30:49.955546",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "d9f303de-13d5-4c2e-9d50-339ce5f5157d",
+            "status": "completed",
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:31:01.105312",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:01.105312",
+            "visible": true,
+            "interactive": false,
+            "operation": "add_task",
+            "task": {
+              "id": "67f090de-8934-4d84-9197-8451e9480776",
+              "title": "Execute run_sql",
+              "description": "Running tool with provided arguments",
+              "status": "in_progress",
+              "progress": null,
+              "created_at": "2026-10-18T20:31:01.103931",
+              "completed_at": null,
+              "metadata": {}
+            },
+            "task_id": null,
+            "status": null,
+            "progress": null,
+            "detail": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:31:01.106455",
+          "rich_component": {
+            "id": "f04f4712-80cf-4959-beea-cea1cd98028a",
+            "type": "status_card",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:01.106455",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "running",
+            "description": "Running tool with 1 arguments",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT city, SUM(quantity * price) AS total_sales FROM sales GROUP BY city ORDER BY total_sales DESC LIMIT 1"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": ""
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:31:01.533362",
+          "rich_component": {
+            "id": "f04f4712-80cf-4959-beea-cea1cd98028a",
+            "type": "status_card",
+            "lifecycle": "update",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:01.533362",
+            "visible": true,
+            "interactive": false,
+            "title": "Executing run_sql",
+            "status": "success",
+            "description": "Tool completed successfully",
+            "icon": "⚙️",
+            "metadata": {
+              "sql": "SELECT city, SUM(quantity * price) AS total_sales FROM sales GROUP BY city ORDER BY total_sales DESC LIMIT 1"
+            },
+            "actions": [],
+            "collapsible": false,
+            "collapsed": false
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "Tool completed successfully"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:31:01.534624",
+          "rich_component": {
+            "id": "vanna-task-tracker",
+            "type": "task_tracker_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:01.534624",
+            "visible": true,
+            "interactive": false,
+            "operation": "update_task",
+            "task": null,
+            "task_id": "67f090de-8934-4d84-9197-8451e9480776",
+            "status": "completed",
+            "progress": null,
+            "detail": "Tool completed successfully"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:31:01.533362",
+          "rich_component": {
+            "id": "7e905f58-ca6f-4bd3-afca-868651620c54",
+            "type": "dataframe",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:01.531400",
+            "visible": true,
+            "interactive": false,
+            "rows": [
+              {
+                "city": "Bangalore",
+                "total_sales": "63500.00"
+              }
+            ],
+            "columns": [
+              "city",
+              "total_sales"
+            ],
+            "title": "Query Results",
+            "description": "SQL query returned 1 rows with 2 columns",
+            "row_count": 1,
+            "column_count": 2,
+            "max_rows_displayed": 100,
+            "searchable": true,
+            "sortable": true,
+            "filterable": true,
+            "exportable": true,
+            "striped": true,
+            "bordered": true,
+            "compact": false,
+            "paginated": true,
+            "page_size": 25,
+            "column_types": {}
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "city,total_sales\r\nBangalore,63500.00\r\n\n\nResults saved to file: query_results_fae7b872.csv\n\n**IMPORTANT: FOR VISUALIZE_DATA USE FILENAME: query_results_fae7b872.csv**"
+          }
+        },
+        {
+          "timestamp": "2026-10-18T20:31:14.665810",
+          "rich_component": {
+            "id": "vanna-status-bar",
+            "type": "status_bar_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:14.665265",
+            "visible": true,
+            "interactive": false,
+            "status": "idle",
+            "message": "Response complete",
+            "detail": "Ready for next message"
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:31:14.666895",
+          "rich_component": {
+            "id": "vanna-chat-input",
+            "type": "chat_input_update",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:14.666895",
+            "visible": true,
+            "interactive": false,
+            "placeholder": "Ask a follow-up question...",
+            "disabled": false,
+            "value": null,
+            "focus": null
+          },
+          "simple_component": null
+        },
+        {
+          "timestamp": "2026-10-18T20:31:14.668902",
+          "rich_component": {
+            "id": "f025e20f-1e6a-46dd-8026-775f8319cf3d",
+            "type": "text",
+            "lifecycle": "create",
+            "data": {},
+            "children": [],
+            "timestamp": "2026-10-18T20:31:14.666895",
+            "visible": true,
+            "interactive": false,
+            "content": "The city with the highest total sales is Bangalore, with a total sales value of $63,500.00.",
+            "markdown": true,
+            "code_language": null,
+            "font_size": null,
+            "font_weight": null,
+            "text_align": null
+          },
+          "simple_component": {
+            "type": "text",
+            "semantic_type": null,
+            "metadata": null,
+            "text": "The city with the highest total sales is Bangalore, with a total sales value of $63,500.00."
+          }
+        }
+      ]
+    }
+  }
+]
