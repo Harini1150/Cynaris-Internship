@@ -1,0 +1,61 @@
+dataContractSpecification: 0.9.3
+
+id: sales-data-v1
+
+info:
+  title: Sales Data Contract
+  description: Data contract for cleaned sales data used by the BI dashboard
+  owner: Harini
+  producer: Data Analyst
+  consumer: BI Dashboard
+  sla: "Data should be refreshed within 2 hours"
+
+models:
+  sales:
+    fields:
+      sale_id:
+        type: integer
+        required: true
+        unique: true
+
+      customer_name:
+        type: string
+        required: true
+        pii: true
+        classification: confidential
+
+      product:
+        type: string
+        required: true
+
+      category:
+        type: string
+        required: true
+        allowed_values:
+          - Electronics
+          - Furniture
+          - Clothing
+
+      quantity:
+        type: integer
+        required: true
+        minimum: 1
+
+      price:
+        type: number
+        required: true
+        minimum: 0
+
+      city:
+        type: string
+        required: true
+
+      sale_date:
+        type: date
+        required: true
+
+      discount:
+        type: number
+        required: true
+        minimum: 0
+        maximum: 100
