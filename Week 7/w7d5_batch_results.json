@@ -1,0 +1,451 @@
+[
+  {
+    "number": 1,
+    "question": "What is the total sales amount in the dataset?",
+    "http_status": 200,
+    "response": {
+      "question": "What is the total sales amount in the dataset?",
+      "answer": 431502.0,
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 2,
+    "question": "What is the total profit in the dataset?",
+    "http_status": 200,
+    "response": {
+      "question": "What is the total profit in the dataset?",
+      "answer": 23955.0,
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 3,
+    "question": "What is the total quantity sold?",
+    "http_status": 200,
+    "response": {
+      "question": "What is the total quantity sold?",
+      "answer": 5615,
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 4,
+    "question": "Which category has the highest total sales?",
+    "http_status": 200,
+    "response": {
+      "question": "Which category has the highest total sales?",
+      "answer": {
+        "Category": "Electronics",
+        "Total_Sales": 165267.0
+      },
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 5,
+    "question": "Which city has the highest total sales?",
+    "http_status": 200,
+    "response": {
+      "question": "Which city has the highest total sales?",
+      "answer": "The city with the highest total sales is Indore.",
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 6,
+    "question": "Which state has the highest total sales?",
+    "http_status": 200,
+    "response": {
+      "question": "Which state has the highest total sales?",
+      "answer": "The state with the highest total sales is Madhya Pradesh.",
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 7,
+    "question": "What is the average order amount?",
+    "http_status": 200,
+    "response": {
+      "question": "What is the average order amount?",
+      "answer": 287.668,
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 8,
+    "question": "Which sub-category has the highest total sales?",
+    "http_status": 200,
+    "response": {
+      "question": "Which sub-category has the highest total sales?",
+      "answer": {
+        "Sub-Category": "Printers",
+        "Total_Sales": 58252.0
+      },
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 9,
+    "question": "How many orders are in the dataset?",
+    "http_status": 200,
+    "response": {
+      "question": "How many orders are in the dataset?",
+      "answer": 500,
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  },
+  {
+    "number": 10,
+    "question": "What is the total sales amount for each category?",
+    "http_status": 200,
+    "response": {
+      "question": "What is the total sales amount for each category?",
+      "answer": [
+        {
+          "Category": "Electronics",
+          "Total_Sales": 165267.0
+        },
+        {
+          "Category": "Clothing",
+          "Total_Sales": 139054.0
+        },
+        {
+          "Category": "Furniture",
+          "Total_Sales": 127181.0
+        }
+      ],
+      "chart": {
+        "type": "bar",
+        "title": "Amount by Order ID",
+        "labels": [
+          "B-26055",
+          "B-25955",
+          "B-25993",
+          "B-25881",
+          "B-25973",
+          "B-25923",
+          "B-26051",
+          "B-25855",
+          "B-26093",
+          "B-25653"
+        ],
+        "datasets": [
+          {
+            "label": "Amount",
+            "data": [
+              8502.0,
+              6339.0,
+              6026.0,
+              5809.0,
+              5228.0,
+              4836.0,
+              4719.0,
+              4613.0,
+              4502.0,
+              4434.0
+            ]
+          }
+        ]
+      },
+      "note": "Chart summarizes the uploaded dataset; it may not represent the specific question."
+    }
+  }
+]
