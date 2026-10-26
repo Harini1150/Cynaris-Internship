@@ -209,7 +209,7 @@ if uploaded_file is not None:
             st.download_button(
                 label="Download Executive PowerPoint",
                 data=ppt_bytes,
-                file_name="CIA_Executive_Insights_W8D2.pptx",
+                file_name="CIA_Executive_Insights_W8D3.pptx",
                 mime=(
                     "application/vnd.openxmlformats-officedocument."
                     "presentationml.presentation"
