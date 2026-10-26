@@ -77,3 +77,57 @@ AI-generated summaries and automated insights should be reviewed before being us
 
 The test presentation was temporary and was removed after validation.
 
+## W8D4: Production Deployment and API Documentation
+
+### Live Deployment
+- **Application:** CIA Executive Insights Generator
+- **Platform:** Render
+- **Live URL:** https://cia-executive-insights-harini.onrender.com
+- **Deployment Status:** Successfully deployed and tested
+
+### Features
+- CSV dataset upload and preview
+- Dataset overview and descriptive statistics
+- Automated exploratory data analysis (EDA) insights
+- AI-generated executive summary
+- AI-generated business recommendations
+- PowerPoint executive report download
+
+### Technology Stack
+- Python 3
+- Streamlit
+- Pandas
+- Groq API for AI-generated insights
+- python-pptx for PowerPoint export
+- Render for deployment
+
+### Local Setup
+1. Clone the repository.
+2. Open the `Week 8` directory.
+3. Install the dependencies:
+   `pip install -r requirements.txt`
+4. Configure the `GROQ_API_KEY` environment variable with a valid Groq API key.
+5. Run the application:
+   `streamlit run app.py`
+
+### Deployment Configuration
+- **Root directory:** `Week 8`
+- **Build command:** `pip install -r requirements.txt`
+- **Start command:** `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
+- **Secret configuration:** `GROQ_API_KEY` is configured through Render environment variables.
+
+### Deployment Verification
+- Render build completed successfully.
+- The application started and became live.
+- A sample CSV containing 10 rows and 5 columns was uploaded successfully.
+- Dataset overview, automated EDA insights, AI executive summary, and five business recommendations were displayed.
+- The PowerPoint report was downloaded successfully.
+
+### Known Limitations
+- The sample dataset is small and its findings should not be generalized to a larger business population.
+- AI-generated summaries and recommendations should be reviewed before business decisions are made.
+- The Groq-powered features require a valid API key and available API service.
+- The Render free instance may spin down after inactivity, delaying the first request while the service wakes up.
+
+### Security
+Never commit API keys or other secrets to the repository. Store deployment secrets in Render environment variables.
