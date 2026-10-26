@@ -131,3 +131,30 @@ The test presentation was temporary and was removed after validation.
 
 ### Security
 Never commit API keys or other secrets to the repository. Store deployment secrets in Render environment variables.
+
+## W8D5: Full Demo and Final Verification
+
+### Application Verification
+
+The CIA Executive Insights Generator was tested using the sample business dataset.
+
+- **CSV upload and processing:** Successfully processed the sample dataset.
+- **Dataset overview:** Displayed 10 rows, 5 columns, and 0 missing cells.
+- **Automated EDA:** Generated descriptive insights, including sales statistics and city frequency.
+- **AI executive summary:** Generated a summary covering key findings, business implications, data-quality risks, and practical next steps.
+- **Business recommendations:** Generated five AI-powered recommendations.
+- **PowerPoint export:** Successfully downloaded the executive report.
+
+### Test Dataset
+
+The verification used a small sample dataset. Results are for demonstration purposes and should not be treated as conclusions about a larger business population.
+
+### Deployment
+
+Live application: https://cia-executive-insights-harini.onrender.com/
+
+### Limitations
+
+- Small datasets may not represent wider business trends.
+- AI-generated insights and recommendations should be checked against the source data.
+- AI features depend on the configured API service and its availability.
