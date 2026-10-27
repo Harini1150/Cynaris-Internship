@@ -1,6 +1,19 @@
-.env
-.venv-pandasai/
-.venv-pandasai311/
-*.log
-Week 5/merged_orders_cleaned.csv
-Week 5/duckdb_100k.csv
+.venv-w9d1/
+.venv/
+__pycache__/
+*.pyc
+mlruns/
+.pytest_cache/
+
+# MLflow local tracking database
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+
+# Python environment and cache
+.venv-w9d1/
+__pycache__/
+*.pyc
+
+# MLflow generated tracking files
+mlruns/
