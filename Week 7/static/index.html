@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CIA Data Analyst Mode</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 1000px; margin: 32px auto; padding: 0 18px; color: #172033; background: #f6f8fc; }
+    h1 { margin-bottom: 6px; }
+    .card { background: white; padding: 20px; margin: 18px 0; border: 1px solid #dce3ee; border-radius: 12px; }
+    input, button { padding: 11px; margin: 6px 0; font: inherit; }
+    input[type="text"] { width: min(95%, 650px); }
+    button { cursor: pointer; border: 0; border-radius: 8px; background: #244db3; color: white; }
+    button:disabled { opacity: .5; cursor: wait; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    .muted { color: #5c667a; }
+    #status { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>CIA Data Analyst Mode</h1>
+  <p class="muted">Upload a CSV, ask a question about your data, and explore a chart.</p>
+
+  <section class="card">
+    <h2>1. Upload a dataset</h2>
+    <form id="uploadForm">
+      <input id="csvFile" type="file" accept=".csv,text/csv" required>
+      <button id="uploadButton" type="submit">Upload CSV</button>
+    </form>
+    <p id="status" role="status" aria-live="polite"></p>
+    <div id="datasetInfo"></div>
+  </section>
+
+  <section class="card">
+    <h2>2. Ask your data</h2>
+    <form id="questionForm">
+      <input id="question" type="text" maxlength="1000"
+        placeholder="e.g. What is the total sales amount?" required>
+      <button id="askButton" type="submit" disabled>Ask question</button>
+    </form>
+    <h3>Answer</h3>
+    <pre id="answer">Upload a CSV to begin.</pre>
+  </section>
+
+  <section class="card">
+    <h2>3. Visualization</h2>
+    <p id="chartNote" class="muted"></p>
+    <canvas id="dataChart" aria-label="Chart of uploaded data"></canvas>
+  </section>
+
+<script>
+  let sessionId = null;
+  let chartInstance = null;
+
+  const status = document.getElementById("status");
+  const uploadButton = document.getElementById("uploadButton");
+  const askButton = document.getElementById("askButton");
+
+  document.getElementById("uploadForm").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const file = document.getElementById("csvFile").files[0];
+    if (!file) return;
+
+    status.textContent = "Uploading and validating CSV...";
+    uploadButton.disabled = true;
+
+    try {
+      const form = new FormData();
+      form.append("file", file);
+      const response = await fetch("/api/upload", { method: "POST", body: form });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.detail || "Upload failed.");
+
+      sessionId = result.session_id;
+      askButton.disabled = false;
+      document.getElementById("datasetInfo").textContent =
+        `${result.filename}: ${result.rows} rows; columns: ${result.columns.join(", ")}.`;
+      status.textContent = "Upload successful.";
+      document.getElementById("answer").textContent = "Ask a question about your dataset.";
+    } catch (error) {
+      status.textContent = `Error: ${error.message}`;
+    } finally {
+      uploadButton.disabled = false;
+    }
+  });
+
+  document.getElementById("questionForm").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!sessionId) return;
+
+    askButton.disabled = true;
+    document.getElementById("answer").textContent = "Analyzing...";
+    try {
+      const response = await fetch("/api/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          session_id: sessionId,
+          question: document.getElementById("question").value
+        })
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.detail || "Analysis failed.");
+
+      document.getElementById("answer").textContent =
+        typeof result.answer === "string" ? result.answer :
+        JSON.stringify(result.answer, null, 2);
+
+      renderChart(result.chart);
+      document.getElementById("chartNote").textContent = result.note || "";
+    } catch (error) {
+      document.getElementById("answer").textContent = `Error: ${error.message}`;
+    } finally {
+      askButton.disabled = false;
+    }
+  });
+
+  function renderChart(chart) {
+    if (chartInstance) chartInstance.destroy();
+    if (!chart) {
+      document.getElementById("chartNote").textContent =
+        "No numeric column available for a chart.";
+      return;
+    }
+    chartInstance = new Chart(document.getElementById("dataChart"), {
+      type: chart.type,
+      data: { labels: chart.labels, datasets: chart.datasets },
+      options: { responsive: true, plugins: { title: { display: true, text: chart.title } } }
+    });
+  }
+</script>
+</body>
+</html>
