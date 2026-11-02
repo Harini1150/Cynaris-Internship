@@ -1,0 +1,177 @@
+[
+  {
+    "question": "Calculate the sum of Amount and return only one number.",
+    "status": "success",
+    "answer": 431502.0
+  },
+  {
+    "question": "Calculate the sum of Profit and return only one number.",
+    "status": "success",
+    "answer": 23955.0
+  },
+  {
+    "question": "Calculate the sum of Quantity and return only one number.",
+    "status": "success",
+    "answer": 5615
+  },
+  {
+    "question": "Group by Category, sum Amount, sort descending, and return only the category and total sales columns.",
+    "status": "failed",
+    "error": "PandasAI returned NoResultFoundError: No result returned."
+  },
+  {
+    "question": "Group by Category, sum Profit, sort ascending, and return only the category and total profit columns.",
+    "status": "success",
+    "answer": {
+      "Furniture": 2298.0,
+      "Electronics": 10494.0,
+      "Clothing": 11163.0
+    }
+  },
+  {
+    "question": "Group by City, sum Amount, sort descending, and return only the top 5 cities and their total sales. Do not return raw rows.",
+    "status": "success",
+    "answer": [
+      {
+        "City": "Indore",
+        "Total Sales": 79069.0
+      },
+      {
+        "City": "Mumbai",
+        "Total Sales": 61867.0
+      },
+      {
+        "City": "Pune",
+        "Total Sales": 33481.0
+      },
+      {
+        "City": "Delhi",
+        "Total Sales": 25019.0
+      },
+      {
+        "City": "Bhopal",
+        "Total Sales": 23583.0
+      }
+    ]
+  },
+  {
+    "question": "Group by State, sum Amount, sort descending, and return only the top 5 states and their total sales. Do not return raw rows.",
+    "status": "success",
+    "answer": {
+      "type": "table",
+      "rows_returned": 5,
+      "columns": [
+        "State",
+        "Amount",
+        "Profit",
+        "Quantity",
+        "Year",
+        "Month",
+        "Quarter",
+        "Day",
+        "Weekday"
+      ],
+      "preview_first_10_rows": [
+        {
+          "State": "Madhya Pradesh",
+          "Amount": 105140.0,
+          "Profit": 5551.0,
+          "Quantity": 1360,
+          "Year": 686222,
+          "Month": 2152,
+          "Quarter": 825,
+          "Day": 4961,
+          "Weekday": 1060
+        },
+        {
+          "State": "Maharashtra",
+          "Amount": 95348.0,
+          "Profit": 6176.0,
+          "Quantity": 1056,
+          "Year": 585293,
+          "Month": 1918,
+          "Quarter": 735,
+          "Day": 4409,
+          "Weekday": 870
+        },
+        {
+          "State": "Delhi",
+          "Amount": 22531.0,
+          "Profit": 2987.0,
+          "Quantity": 277,
+          "Year": 149393,
+          "Month": 262,
+          "Quarter": 113,
+          "Day": 853,
+          "Weekday": 179
+        },
+        {
+          "State": "Uttar Pradesh",
+          "Amount": 22359.0,
+          "Profit": 3237.0,
+          "Quantity": 288,
+          "Year": 137237,
+          "Month": 540,
+          "Quarter": 201,
+          "Day": 1127,
+          "Weekday": 235
+        },
+        {
+          "State": "Rajasthan",
+          "Amount": 21149.0,
+          "Profit": 1257.0,
+          "Quantity": 282,
+          "Year": 149359,
+          "Month": 465,
+          "Quarter": 176,
+          "Day": 1140,
+          "Weekday": 271
+        }
+      ]
+    }
+  },
+  {
+    "question": "Group by Sub-Category, sum Profit, sort descending, and return only the top 5 sub-categories and their total profit.",
+    "status": "success",
+    "answer": {
+      "type": "table",
+      "rows_returned": 5,
+      "columns": [
+        "Sub-Category",
+        "Profit"
+      ],
+      "preview_first_10_rows": [
+        {
+          "Sub-Category": "Printers",
+          "Profit": 5964.0
+        },
+        {
+          "Sub-Category": "Bookcases",
+          "Profit": 4888.0
+        },
+        {
+          "Sub-Category": "Accessories",
+          "Profit": 3559.0
+        },
+        {
+          "Sub-Category": "Trousers",
+          "Profit": 2847.0
+        },
+        {
+          "Sub-Category": "Stole",
+          "Profit": 2559.0
+        }
+      ]
+    }
+  },
+  {
+    "question": "Count unique values in CustomerName and return only one number.",
+    "status": "success",
+    "answer": 332
+  },
+  {
+    "question": "Count rows where Profit is less than zero and return only one number.",
+    "status": "success",
+    "answer": 503
+  }
+]
