@@ -1,0 +1,21 @@
+Order ID,Order Date,CustomerName,State,City,Amount,Profit,Quantity,Category,Sub-Category,Year,Month,Month_Name,Quarter,Day,Weekday,Weekday_Name,Amount_IQR_Anomaly,Profit_IQR_Anomaly,Quantity_IQR_Anomaly,IQR_Anomaly,IsolationForest_Prediction,IsolationForest_Anomaly,Anomaly_Score,Anomaly_Method_Count,Anomaly_Consensus
+B-25973,2019-01-24,Seema,Uttar Pradesh,Allahabad,4141.0,1698.0,13,Electronics,Printers,2019,1,Jan,1,24,3,Thursday,True,True,True,True,-1.0,True,0.2120053283561516,2,True
+B-25798,2018-10-01,Shishu,Andhra Pradesh,Hyderabad,2830.0,-1981.0,13,Furniture,Bookcases,2018,10,Oct,4,1,0,Monday,True,True,True,True,-1.0,True,0.20112252509730377,2,True
+B-26055,2019-03-10,Yaanvi,Madhya Pradesh,Indore,5729.0,64.0,14,Furniture,Chairs,2019,3,Mar,1,10,6,Sunday,True,False,True,True,-1.0,True,0.18379411992056183,2,True
+B-25923,2018-12-27,Vishakha,Maharashtra,Mumbai,3873.0,891.0,6,Electronics,Phones,2018,12,Dec,4,27,3,Thursday,True,True,False,True,-1.0,True,0.17047736753931142,2,True
+B-25858,2018-11-13,Swapnil,Maharashtra,Mumbai,2457.0,665.0,11,Electronics,Electronic Games,2018,11,Nov,4,13,1,Tuesday,True,True,True,True,-1.0,True,0.1528101648971748,2,True
+B-26093,2019-03-27,Sarita,Maharashtra,Pune,2847.0,712.0,8,Electronics,Printers,2019,3,Mar,1,27,2,Wednesday,True,True,False,True,-1.0,True,0.1369296100666033,2,True
+B-25602,2018-04-01,Pearl,Maharashtra,Pune,2617.0,1151.0,4,Electronics,Phones,2018,4,Apr,2,1,6,Sunday,True,True,False,True,-1.0,True,0.13400297946062745,2,True
+B-26022,2019-02-18,Shrichand,Punjab,Chandigarh,1824.0,-1303.0,8,Electronics,Phones,2019,2,Feb,1,18,0,Monday,True,True,False,True,-1.0,True,0.1214490289182868,2,True
+B-25993,2019-02-03,Harshal,Delhi,Delhi,4363.0,305.0,5,Furniture,Tables,2019,2,Feb,1,3,6,Sunday,True,True,False,True,-1.0,True,0.11999569918241437,2,True
+B-25608,2018-04-08,Aarushi,Tamil Nadu,Chennai,1364.0,-1864.0,5,Furniture,Tables,2018,4,Apr,2,8,6,Sunday,True,True,False,True,-1.0,True,0.11519365386490199,2,True
+B-25802,2018-10-05,Yash,Maharashtra,Mumbai,633.0,-633.0,11,Electronics,Accessories,2018,10,Oct,4,5,4,Friday,False,True,True,True,-1.0,True,0.11083217885595187,2,True
+B-25964,2019-01-20,Oshin,Madhya Pradesh,Indore,1270.0,546.0,11,Electronics,Electronic Games,2019,1,Jan,1,20,6,Sunday,True,True,True,True,-1.0,True,0.10488242465418096,2,True
+B-25779,2018-09-12,Savi,Madhya Pradesh,Indore,1361.0,-980.0,3,Furniture,Tables,2018,9,Sep,3,12,2,Wednesday,True,True,False,True,-1.0,True,0.10483068337364865,2,True
+B-25757,2018-08-21,Mohit,Madhya Pradesh,Indore,3151.0,-35.0,7,Clothing,Trousers,2018,8,Aug,3,21,1,Tuesday,True,False,False,True,-1.0,True,0.10100481273050621,2,True
+B-25830,2018-10-26,Aastha,Himachal Pradesh,Simla,1954.0,782.0,3,Electronics,Phones,2018,10,Oct,4,26,4,Friday,True,True,False,True,-1.0,True,0.09963866214815342,2,True
+B-25601,2018-04-01,Bharat,Gujarat,Ahmedabad,1275.0,-1148.0,7,Furniture,Bookcases,2018,4,Apr,2,1,6,Sunday,True,True,False,True,-1.0,True,0.09779402601992526,2,True
+B-25955,2019-01-16,Soumya,Maharashtra,Pune,2927.0,146.0,8,Furniture,Bookcases,2019,1,Jan,1,16,2,Wednesday,True,True,False,True,-1.0,True,0.09342156157168668,2,True
+B-25666,2018-05-22,Tanvi,Punjab,Chandigarh,934.0,-916.0,7,Electronics,Electronic Games,2018,5,May,2,22,1,Tuesday,True,True,False,True,-1.0,True,0.09041615573498318,2,True
+B-25761,2018-08-25,Surabhi,Maharashtra,Mumbai,2188.0,1050.0,5,Furniture,Bookcases,2018,8,Aug,3,25,5,Saturday,True,True,False,True,-1.0,True,0.08951412159538863,2,True
+B-25797,2018-09-30,Sauptik,Madhya Pradesh,Indore,1630.0,-802.0,5,Furniture,Tables,2018,9,Sep,3,30,6,Sunday,True,True,False,True,-1.0,True,0.08922037905405655,2,True
