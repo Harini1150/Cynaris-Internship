@@ -1,0 +1,4 @@
+Feature,Q1,Q3,IQR,Lower_Bound,Upper_Bound,Anomaly_Count,Anomaly_Percentage
+Amount,45.0,322.0,277.0,-370.5,737.5,155,10.333333333333334
+Profit,-9.25,38.0,47.25,-80.125,108.875,291,19.400000000000002
+Quantity,2.0,5.0,3.0,-2.5,9.5,23,1.5333333333333332
