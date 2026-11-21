@@ -1,0 +1,17 @@
+# W10D5 Sales Forecasting - Summary
+
+- The order-level dataset contains 1,500 rows and 500 unique orders.
+- Total order-level sales are 431,502.00 and total profit is 23,955.00.
+- The monthly time-series dataset contains 84 observations from 2019-01-01 to 2025-12-01.
+- On the 12-month holdout, Prophet achieved the lower MAE (5,533.72).
+- The monthly sales series is simulated educational data; its patterns and forecasts must not be presented as verified real-world market predictions.
+
+## Model comparison
+                    MAE     RMSE  MAPE (%)
+Seasonal Naive 8,509.66 9,777.81      7.65
+Prophet        5,533.72 6,572.27      5.24
+
+## Limitations
+- Monthly sales data is simulated educational data.
+- Forecasts are estimates, not guarantees.
+- Results should be re-evaluated with real, regularly updated sales data.

@@ -1,0 +1,4 @@
+Method,Anomaly_Count,Percentage
+IQR,343,22.866666666666667
+Isolation Forest,75,5.0
+Both Methods,75,5.0
