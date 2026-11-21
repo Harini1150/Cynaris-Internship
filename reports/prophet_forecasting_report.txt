@@ -1,0 +1,39 @@
+
+PROPHET MONTHLY SALES FORECASTING REPORT
+=========================================
+
+Dataset: data/monthly_sales.csv
+Observations: 84
+Historical period: 2019-01-01 to 2025-12-01
+
+MODEL
+-----
+Algorithm: Facebook Prophet
+Yearly seasonality: Enabled
+Weekly seasonality: Disabled
+Daily seasonality: Disabled
+Seasonality mode: Additive
+
+EVALUATION
+----------
+Training observations: 72
+Testing observations: 12
+Testing period: 2025-01-01 to 2025-12-01
+
+MAE: 5,533.72
+RMSE: 6,572.27
+MAPE: 5.24%
+
+NEXT 12 MONTHS FORECAST
+-----------------------
+Forecast start: 2026-01-01
+Forecast end: 2026-12-01
+Average predicted sales: 122,251.59
+Minimum predicted sales: 105,635.07
+Maximum predicted sales: 151,753.09
+
+NOTE
+----
+This analysis uses the monthly sales dataset available in the W10D2
+worktree. It is a sales time-series exercise, not an external
+Indian stock-market forecast. Forecast values are estimates, not guarantees.
